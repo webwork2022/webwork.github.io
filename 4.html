@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #f1f1f1;
+  padding-left: 30px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <p>中国美食</p>
+  <a href="index.html" style="float:right">首页</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>北京烤鸭</h2>
+      <h5>烤鸭是具有世界声誉的北京著名菜，起源于中国南北朝时期，《食珍录》中已记有炙鸭，在当时是宫廷名菜。用料为优质肉食鸭，果木炭火烤制，色泽红润，肉质肥而不腻，外脆里嫩。北京烤鸭分为两大流派，而北京最著名的烤鸭店也即是两派的代表。它以色泽红艳，肉质细嫩，味道醇厚，肥而不腻的特色，被誉为“天下美味”。</h5>
+      <img src="https://img2.baidu.com/it/u=523805202,3746450160&fm=253&fmt=auto&app=138&f=JPG?w=554&h=364" style="height:600px;"></div>
+      <p></p>
+      <p>
+</p>
+    </div>
+    <div class="card">
+      <h2>北京烤鸭的历史由来</h2>
+      <h5></h5>
+      <img src="https://img0.baidu.com/it/u=159609587,1995470498&fm=253&fmt=auto&app=138&f=JPEG?w=1024&h=488" style="height:200px;"></div>
+      
+      <p>明初年间，老百姓爱吃南京板鸭，皇帝也爱吃，据说明太祖朱元璋就“日食烤鸭一只”。宫廷里的御厨们就想方设法研制鸭馔的新吃法来讨好万岁爷，于是也就研制出了叉烧烤鸭和焖炉烤鸭这两种。叉烧烤鸭以“全聚德”为代表，而焖炉烤鸭则以“便宜坊”最著名。金陵烤鸭是选用肥大的草鸭为原料，净重要求在2．5公斤左右。
+据说，随着明成祖（即朱棣）篡位迁都北京后，也顺便带走了不少南京里烤鸭的高手。在嘉靖年间，烤鸭就从宫廷传到了民间，老“便宜坊”烤鸭店就在菜市口米市胡同挂牌开业，这也是北京第一家烤鸭店。而当时的名称则叫“金陵片皮鸭”，就在老“便宜坊”的市幌上还特别标有一行小字：金陵烤鸭。
+在1864年，京城名气最大的“全聚德”烤鸭店也挂牌开业，烤鸭技术又发展到了“挂炉”时代。它是用果木明火烤制并具有特殊的清香味道，不仅使烤鸭香飘万里而且还使得“北京烤鸭”取代了“南京烤鸭”，而“金陵片皮鸭”只能在港澳、深圳、广州等南方几个大城市的菜单上才能见到。</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer" style="height:100px;">
+  <h2>中国美食之北京烤鸭</h2>
+</div>
+
+</body>
+</html>

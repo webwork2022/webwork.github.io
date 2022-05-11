@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #f1f1f1;
+  padding-left: 30px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <p>中国美食</p>
+  <a href="index.html" style="float:right">首页</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>广西桂林米粉</h2>
+      <h5>桂林米粉是桂林市的一道传统小吃，属于桂菜系；该菜品以早籼米和卤水为原料。
+现已被列入国家级非物质文化遗产。</h5>
+      <img src="https://img1.baidu.com/it/u=4283228834,2424113098&fm=253&fmt=auto&app=138&f=PNG?w=500&h=334" style="height:600px;"></div>
+      <p></p>
+      <p>
+</p>
+    </div>
+    <div class="card">
+      <h2>广西桂林米粉的起源</h2>
+      <h5></h5>
+      <img src="https://img0.baidu.com/it/u=2488057177,441777927&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" style="height:200px;"></div>
+      
+      <p>传说讲秦始皇派史禄率民工开凿灵渠，灵渠修通了，秦始皇由丞相李斯陪同，微服游览桂林山水。秦始皇有个嗜好，爱用鲤鱼须、鱼肚来下酒。来到漓江一看，哇，漓江里的鲤鱼用手就可以捞到，于是秦始皇叫船家赶快弄来了很多鱼，又给了很多钱。一餐不知道要用多少条鲤鱼才炒得出一碗，秦始皇在漓江上游了半个月，杀了成千上万条鲤鱼。急得漓江里的鲤鱼王乱跳，发誓要把秦始皇的游船拱翻，让他葬身鱼腹，河伯知道了警告说：“帝王之事乱来不得，你赶紧另想办法吧”。鲤鱼王急中生智，用大米磨浆制成了鱼须（米粉）、鱼肚（切粉）。秦始皇吃了，拍案叫绝，从此桂林米粉就问世了。</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer" style="height:100px;">
+  <h2>中国美食之广西桂林米粉</h2>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #f1f1f1;
+  padding-left: 30px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <p>中国美食</p>
+  <a href="index.html" style="float:right">首页</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>重庆酸辣粉</h2>
+      <h5>重庆酸辣粉是重庆城区广为流传的一种地方传统名小吃，历来就是重庆人的最爱之一 。手工制作的主粉由红薯，豌豆淀粉为主要原料，然后由农家用传统手工漏制。
+重庆酸辣粉的粉丝劲道弹牙、口味麻辣酸爽、浓香开胃，深受全国人民喜爱的重庆地方小吃。
+“重庆酸辣粉”是纯天然绿色食品，由于重庆的酸辣粉口味独特、酸辣开胃，长期以来一直深受重庆人的喜爱，其特点是“麻、辣、鲜、香、酸且油而不腻”。素有“天下第一粉”之美名。</h5>
+      <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F0bd162d9f2d3572c11dfe1784c59742762d0f7036576&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654799943&t=aa2845f874a6674430fa0be95b2f0319" style="height:600px;"></div>
+      <p></p>
+      <p>
+</p>
+    </div>
+    <div class="card">
+      <h2>重庆酸辣粉的味型口感</h2>
+      <h5></h5>
+      <img src="https://img14.360buyimg.com/pop/jfs/t1/198513/11/18274/512769/619f3368Ee13cc4e3/9e3be2ffc1606b6b.jpg" style="height:200px;"></div>
+      
+      <p>酸辣粉的调配料方面，有借鉴重庆小面的调味手法，比如，使用油辣子海椒，用以获得了味型的基本定位。但红薯粉丝固有的物理特性：不吸调料，对此，口味执着又喜好钻研的重庆人，因材施料，创制了既根植于渝城特色，但又个性鲜明的红薯粉丝专属口感。
+因为粉丝不宜吸附水分和调味料，酸辣粉调料的口味，较一般本地汤粉更重。比如，姜蒜末不冲调高汤，直接加入，辣味、麻味使用更为猛烈，而且还更呛。更为重要的是，醋的使用堪称创举，挥发性强的醋，可以激发出其他调料的气味形成综合香气，让一碗酸辣粉那勾人的麻辣酸爽老远就能闻到。正宗重庆酸辣粉不用山西醋也不用香醋。数百年历史的保宁醋，嘉陵江中游的冬水酿制，酸香浓郁微甜，醋酸气味含蓄不刺鼻，是重庆酸辣粉正宗绝配。
+</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer" style="height:100px;">
+  <h2>中国美食之重庆酸辣粉</h2>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #f1f1f1;
+  padding-left: 30px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <p>中国美食</p>
+  <a href="index.html" style="float:right">首页</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>宁夏手抓羊肉</h2>
+      <h5>宁夏手抓羊肉是一款宁夏菜品，制作原料主要有羊肉、 花椒等。</h5>
+      <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp7.itc.cn%2Fimages01%2F20211017%2Ff0f58c0b3e6d492ca3cf543a19037933.jpeg&refer=http%3A%2F%2Fp7.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654801509&t=e4a7167a396a46b428d1f1e7ac2bc328" style="height:600px;"></div>
+      <p></p>
+      <p>
+</p>
+    </div>
+    <div class="card">
+      <h2>宁夏手抓羊肉的做法</h2>
+      <h5></h5>
+      <img src="https://img1.baidu.com/it/u=4224933702,1672197964&fm=253&fmt=auto&app=138&f=JPEG?w=1000&h=500" style="height:200px;"></div>
+      
+      <p>1.制调料：取芝麻酱、豆腐乳汁、腌韭菜花、酱油、醋、葱花、蒜泥、辣椒油等放在小碗内一起拌匀待用。
+2.切块、煮制：取宁夏特产羯羊宰杀后，去内脏、头、尾、四肢再切成1千克左右的大块，投入开水锅中加花椒、小茴香、八角、桂皮和杏仁、陈皮等调料，盖锅炖煮，待炖至提羊骨一抖，骨肉分离时即可取出。</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer" style="height:100px;">
+  <h2>中国美食之宁夏手抓羊肉</h2>
+</div>
+
+</body>
+</html>
