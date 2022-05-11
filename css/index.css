@@ -1,0 +1,270 @@
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul li{
+  list-style: none; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* 左侧菜单 */
+.aside{
+  flex: 15%;
+  background-color: #99CCCC;
+}
+.aside img{
+  margin-top: 5px;
+}
+.aside li a{
+  display: block;
+}
+.aside li{
+  line-height:50px;
+  padding-left: 30px;
+  background-color: #99CCCC;
+}
+.aside li.hot{
+  background-color: #FFCC99;
+}
+.aside li h1{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.aside li:hover{
+  background-color: #FFCC99;
+}
+/* 右侧内容 */
+main{
+  width: 85%;
+  padding: 0 20px;
+}
+p{
+  line-height: 1.8;
+  font-size: 14px;
+}
+.home .intro{
+  overflow: hidden;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .intro .left{
+  flex: 1;
+}
+.home .intro .left h3{
+  font-size: 30px;
+  font-weight: normal;
+}
+.home .intro .left p{
+  font-size: 16px;
+  margin-top: 15px;
+}
+.home .intro img{
+  margin-left: 30px;
+  border-radius: 20px;
+}
+.home .line{
+  height: 2px;
+  border-top: 2px dashed #000;
+  margin: 30px 0;
+}
+.home .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.home .column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+.home .column p{
+  font-size: 18px;
+  padding: 10px;
+}
+.home .column .item{
+  margin-bottom: 20px;
+  margin-left: 6px;
+  margin-right: 6px;
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 19%) !important;
+}
+.home .column img {
+  width: 100%;
+  vertical-align: middle;
+}
+footer{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: #000;
+  color: #9d9d9d;
+}
+
+/* 南方美食 */
+.nanfang ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nanfang li{
+  width: 45%;
+  margin: 2%;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+}
+.nanfang li h2{
+  margin-bottom: 15px;
+}
+.nanfang li p{
+  font-size: 17px;
+  margin-top: 15px;
+}
+.nanfang li div{
+  overflow: hidden;
+}
+.nanfang li img{
+  height:280px;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+.nanfang li  img:hover {
+  transform: scale(1.1);
+}
+
+/* 北方美食 */
+.beifang {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.beifang li{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  line-height: 1.8;
+  border-bottom: 1px solid #ddd;
+}
+.beifang li img{
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  -webkit-animation-name: scaleDraw; /*关键帧名称*/
+  -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+  -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+  -webkit-animation-duration: 5s; /*动画所花费的时间*/
+}
+@keyframes scaleDraw {  
+  0%{
+      transform: scale(1);  /*开始为原始大小*/
+  }
+  25%{
+      transform: scale(1.1); /*放大1.1倍*/
+  }
+  50%{
+      transform: scale(1);
+  }
+  75%{
+      transform: scale(1.1);
+  }
+
+}
+.beifang li .cont{
+  display: flex;
+  justify-content: space-between;
+}
+.beifang li .cont div{
+  margin-right: 20px;
+}
+.beifang li .cont p{
+  flex: 1;
+}
+/* 团队介绍 */
+.team ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.team li{
+  width: 45%;
+  margin: 2%;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+}
+.team li h2{
+  margin-bottom: 15px;
+}
+.team li p{
+  font-size: 17px;
+  margin-top: 15px;
+}
+.team li img{
+  height:280px;
+  width: 100%;
+  transition: all 0.6s;
+}
+.team li img:hover{
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+
+/* 响应式处理 */
+@media screen and (max-width: 830px) {
+  .container{
+    width: 98%;
+  }
+  .nanfang li img{
+    height: 250px;
+  }
+  .team li img{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main{
+    width: 100%;
+  }
+  .home .intro .left {
+      flex: 100%;
+  }
+  .home .intro img {
+      margin-left: 0;
+      width: 100%;
+  }
+  .home .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .home .column img{
+    width: 100%;
+  }
+  .nanfang li{
+    width: 100%;
+  }
+  .beifang li img{
+    width: 100%;
+    height: auto;
+  }
+  .beifang li .cont {
+    display: inherit;
+  }
+  .beifang li .cont div{
+    margin-right: 0;
+  }
+  .team li{
+    width: 100%;
+  }
+
+}
+
